@@ -1,0 +1,71 @@
+
+/* ==================== */
+/*    COLOR PALETTE     */
+/* ==================== */
+
+:root {
+  /* White & Black */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Blue */
+  --color-blue-950: #0D192C;
+  --color-blue-900: #15263F;
+  --color-blue-800: #2E405A;
+  --color-blue-500: #8BACD9;
+
+  /* Cyan */
+  --color-cyan-400: #00FFF8;
+
+
+/* ## Typography */
+  --fw-semibold: 600;
+  --fw-medium: 400;
+  --fw-light: 300;
+}
+
+
+/* ==================== */
+/*    BASE STYLES    */
+/* ==================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--color-blue-950);
+  color: var(--color-white);
+  font-size: 1.3rem;
+  font-weight: var(--fw-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.card {
+  
+  background-color: var(--color-blue-800);
+  margin: 1rem;
+  padding: 2.4rem;
+  border-radius: 1.5rem;
+}
+
+.card__image {
+  
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
