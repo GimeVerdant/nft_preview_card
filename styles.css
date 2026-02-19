@@ -196,3 +196,6 @@ h1 {
 .card:hover .card__title {
   color: var(--color-cyan-400);
 }
+.card:hover .card__author-name {
+  color: var(--color-cyan-400);
+}
