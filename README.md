@@ -50,7 +50,7 @@ Users should be able to:
 
 ### Continued development
 
-Trying other notations
+Trying other notations CSS methodologies
 
 
 

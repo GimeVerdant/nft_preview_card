@@ -13,6 +13,7 @@
   --color-blue-900: #15263f;
   --color-blue-800: #2e405a;
   --color-blue-500: #8bacd9;
+  --color-blue-overlay:hsla(178, 100%, 50%, 0.5); /* cyan at 50% opacity */
 
   /* Cyan */
   --color-cyan-400: #00fff8;
@@ -64,6 +65,7 @@ h1 {
   margin: 1rem;
   padding: 1.5rem;
   border-radius: 1.5rem;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -81,7 +83,7 @@ h1 {
   width: 100%;
   border-radius: 0;
    max-width: 25rem;
-  width: 100%; 
+  
 }
 
 
@@ -93,7 +95,7 @@ h1 {
 }
 
 .card__content {
-  margin-top: 1.5rem;
+  margin-block-start: 1.5rem;
 }
 
 .card__content > * + * {
@@ -168,12 +170,14 @@ h1 {
 
 
 
-/* HOVER state */
+/* ==================== */
+/*    HOVER State   */
+/* ==================== */
 
 .card__overlay {
   position: absolute;
   inset: 0;
-  background-color: hsla(178, 100%, 50%, 0.5); /* cyan at 50% opacity */
+  background-color: var(--color-blue-overlay);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,7 +203,9 @@ h1 {
 
 
 
-/* Focus state */
+/* ==================== */
+/*   FOCUS State   */
+/* ==================== */
 .card__overlay:focus-visible {
   outline: 2px solid var(--color-cyan-400);
   outline-offset: 2px;
