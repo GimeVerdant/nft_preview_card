@@ -89,9 +89,9 @@ h1 {
 
 
 .card__description {
-  color: var(--color-blue-500);
-  font-weight: var(--fw-light);
-
+  color: var(--color-blue-500);      
+  font-weight: var(--fw-light);      
+  line-height: 145%;                 
 }
 
 .card__content {
@@ -100,12 +100,6 @@ h1 {
 
 .card__content > * + * {
   margin-top: 1.5rem;
-}
-
-.card__description {
-  color: var(--color-blue-500);
-  font-weight: var(--fw-light);
-  line-height: 145%;
 }
 
 .card__info {
