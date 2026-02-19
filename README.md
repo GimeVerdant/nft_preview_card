@@ -44,8 +44,8 @@ Users should be able to:
 
 
 ### What I learned
-BEM
-clamp()
+- BEM
+- clamp()
 
 
 ### Continued development

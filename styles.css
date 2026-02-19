@@ -80,7 +80,7 @@ h1 {
   display: block; 
   width: 100%;
   border-radius: 0;
-   max-width: 400px;
+   max-width: 25rem;
   width: 100%; 
 }
 
@@ -190,12 +190,22 @@ h1 {
   opacity: 0.8;
 }
 
-.card__overlay-icon:hover {
-  opacity: 1;
-}
 .card:hover .card__title {
   color: var(--color-cyan-400);
 }
 .card:hover .card__author-name {
+  color: var(--color-cyan-400);
+}
+
+
+
+/* Focus state */
+.card__overlay:focus-visible {
+  outline: 2px solid var(--color-cyan-400);
+  outline-offset: 2px;
+}
+
+.card__title:focus-visible,
+.card__author-name:focus-visible {
   color: var(--color-cyan-400);
 }
